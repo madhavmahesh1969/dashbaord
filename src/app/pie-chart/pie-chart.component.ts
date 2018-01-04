@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { GooglePieChartService } from '../service/google-pie-chart.service';
-//ximport { PieChartConfig } from '../model/PieChartConfig';
+import { PieChartConfig } from '../model/pie-chart-config';
 
 declare var google: any;
 
@@ -12,8 +12,9 @@ declare var google: any;
 export class PieChartComponent implements OnInit {
 
     @Input() data: any[];
-    @Input() config: {title: string,
-                        pieHole: number}
+        @Input() config: PieChartConfig;
+    // @Input() config: {title: string,
+    //                     pieHole: number}
     @Input() elementId: string;
 
     constructor(private _pieChartService: GooglePieChartService) {}

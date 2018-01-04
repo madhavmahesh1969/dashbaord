@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PieChartConfig } from './Model/PieChartConfig';
+import { PieChartConfig } from './model/pie-chart-config';
 
 @Component({
   selector: 'app-root',
